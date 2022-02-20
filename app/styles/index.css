@@ -1,0 +1,47 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+/* Only supported on Chromium-based browsers and Safari */
+  font-family: system-ui;
+  color: hsla(0,0%,0%,0.9);
+  background-color: #F3F3F3;
+  margin: 4rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+footer {
+  font-family: monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+a {
+  font-weight: 400;
+  word-wrap: break-word;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  font-size: 1.09596rem;
+  line-height: 1.75rem;
+  box-sizing: inherit;
+  background-color: transparent;
+  box-shadow: 0 1px 0 0 currentColor;
+  color: #005C56;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: 0 -0.2em 0 0 #43B992 inset;
+}
+
+.theme {
+  color: #005C56;
+}
