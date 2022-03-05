@@ -46,7 +46,6 @@ function getRandomArbitrary(min: number, max: number) {
 }
 
 function Card({ url, rotateZ }: { url: string, rotateZ: number }) {
-  console.log(numbers)
   const [style, api] = useSpring(() => ({
     x: 0,
     y: 0,
