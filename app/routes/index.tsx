@@ -1,4 +1,5 @@
 import type { MetaFunction } from "remix";
+import { Link } from 'remix'
 import styles from "~/styles/index.css"
 
 export function links() {
@@ -60,6 +61,9 @@ export default function Index() {
           >
             github
           </a>
+        </li>
+        <li>
+          <Link prefetch="intent" to="/ett">ett</Link>
         </li>
       </ul>
     </article>

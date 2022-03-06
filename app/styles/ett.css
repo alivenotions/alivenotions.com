@@ -56,6 +56,11 @@ body {
   text-align: center;
   color: #ffffffaa;
 }
+p {
+  font-family: sans-serif;
+  background-color: #fefefe;
+  font-weight: 700;
+}
 
 @media (max-height: 850px) {
   .card {

@@ -1,11 +1,33 @@
 import React, { useEffect } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 import { createUseGesture, dragAction, pinchAction } from '@use-gesture/react'
-import type { MetaFunction } from "remix";
+import { LoaderFunction, MetaFunction, useLoaderData } from "remix";
 import styles from "~/styles/ett.css"
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+    {
+      rel: "preload",
+      href: "/flowers.jpg",
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: "/repetition.jpg",
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: "/anxiety.jpg",
+      as: "image",
+    },
+    {
+      rel: "preload",
+      href: "/empty.jpg",
+      as: "image",
+    },
+    { rel: "stylesheet", href: styles }
+  ]
 }
 
 export const meta: MetaFunction = () => {
@@ -16,10 +38,16 @@ export const handle = { hydrate: true }
 
 const useGesture = createUseGesture([dragAction, pinchAction])
 
-const cards = ['/empty.jpeg', '/flowers.jpg', 'moo.jpg', 'anxiety.jpg']
-const numbers = new Array(cards.length).fill(0).map(_ => getRandomArbitrary(-10, 10))
+type Data = { numbers: number[], cards: string[] }
+export const loader: LoaderFunction = async () => {
+  const cards = ['/flowers.jpg','repetition.jpg', 'anxiety.jpg', '/empty.jpg', ]
+  const numbers = new Array(cards.length).fill(0).map(_ => getRandomRange(-17, 17))
+  return { numbers, cards };
+}
 
 export default function Index() {
+  const { numbers, cards } = useLoaderData<Data>()
+
   useEffect(() => {
     const handler = (e: Event) => e.preventDefault()
     document.addEventListener('gesturestart', handler)
@@ -35,13 +63,13 @@ export default function Index() {
   return (
     <div className={`flex fill center container`}>
       {cards.map((x, i) => <Card url={x} rotateZ={numbers[i]} key={i} />)}
-      <p>meeting people is easy</p>
+      <p>meeting people is easy.</p>
     </div>
   )
 
 }
 
-function getRandomArbitrary(min: number, max: number) {
+function getRandomRange(min: number, max: number) {
   return Math.random() * (max - min) + min;
 }
 
