@@ -4,12 +4,12 @@
   "description": "private space once again",
   "dependencies": {
     "@react-spring/web": "^9.7.1",
+    "@remix-run/node": "^1.14.1",
     "@remix-run/react": "^1.14.1",
     "@remix-run/vercel": "^1.14.1",
     "@use-gesture/react": "^10.2.24",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remix": "^1.14.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.14.1",
@@ -24,7 +24,6 @@
   },
   "sideEffects": false,
   "scripts": {
-    "postinstall": "remix setup node",
     "build": "cross-env NODE_ENV=production remix build",
     "dev": "cross-env NODE_ENV=development remix dev"
   }

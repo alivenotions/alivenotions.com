@@ -1,12 +1,4 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-  useMatches,
-} from "remix";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useMatches } from "@remix-run/react";
 
 export default function App() {
   const matches = useMatches()
