@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 import { createUseGesture, dragAction, pinchAction } from '@use-gesture/react'
-import { LoaderFunction, MetaFunction, useLoaderData } from "remix";
+import { useLoaderData } from "@remix-run/react";
+import { MetaFunction, LoaderFunction } from "@remix-run/node"
 import styles from "~/styles/ett.css"
 
 export function links() {
