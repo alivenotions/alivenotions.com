@@ -1,30 +1,9 @@
 {
   "private": true,
   "name": "alivenotions.com",
-  "description": "private space once again",
-  "dependencies": {
-    "@react-spring/web": "^9.7.1",
-    "@remix-run/node": "^1.14.1",
-    "@remix-run/react": "^1.14.1",
-    "@remix-run/vercel": "^1.14.1",
-    "@use-gesture/react": "^10.2.24",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.14.1",
-    "@remix-run/serve": "^1.14.1",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "cross-env": "^7.0.3",
-    "typescript": "^4.9.5"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "sideEffects": false,
+  "description": "personal space",
   "scripts": {
-    "build": "cross-env NODE_ENV=production remix build",
-    "dev": "cross-env NODE_ENV=development remix dev"
+    "dev": "npx serve .",
+    "start": "npx serve ."
   }
 }

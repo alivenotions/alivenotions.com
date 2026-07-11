@@ -1,5 +1,2 @@
-.cache
+.DS_Store
 node_modules
-api
-public/build/
-build/
