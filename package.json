@@ -3,6 +3,7 @@
   "name": "alivenotions.com",
   "description": "personal space",
   "scripts": {
+    "build": "sh scripts/build-vercel.sh",
     "dev": "npx serve public",
     "start": "npx serve public"
   }
