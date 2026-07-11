@@ -11,5 +11,5 @@ npm run dev
 Or with Python:
 
 ```bash
-python -m http.server 3000
+python -m http.server 3000 --directory public
 ```
