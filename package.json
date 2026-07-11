@@ -3,7 +3,7 @@
   "name": "alivenotions.com",
   "description": "personal space",
   "scripts": {
-    "build": "echo 'Static site ready'",
+    "build": "test -f public/index.html",
     "dev": "npx serve public",
     "start": "npx serve public"
   }
