@@ -13,3 +13,11 @@ Or with Python:
 ```bash
 python -m http.server 3000 --directory public
 ```
+
+## Deploying
+
+Vercel deploys from the committed `.vercel/output` directory. After editing files in `public/`, regenerate it:
+
+```bash
+npm run build
+```
