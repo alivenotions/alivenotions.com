@@ -2,6 +2,9 @@
   "private": true,
   "name": "alivenotions.com",
   "description": "personal space",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "npx serve public",
     "start": "npx serve public"
