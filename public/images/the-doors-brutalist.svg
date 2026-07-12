@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Brutalist door poster</title>
+  <desc id="desc">A stark black, cream, and rust-red poster built from oversized door shapes and distressed type.</desc>
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="12" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feBlend in="SourceGraphic" in2="gray" mode="multiply"/>
+    </filter>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#f3f3f3" stroke-width="1" opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="760" fill="#d64d36"/>
+  <rect x="22" y="22" width="556" height="716" fill="none" stroke="#171717" stroke-width="5"/>
+  <rect x="47" y="47" width="506" height="666" fill="url(#grid)"/>
+
+  <text x="48" y="106" fill="#171717" font-family="Arial Black, Helvetica, sans-serif" font-size="74" font-weight="900" letter-spacing="-6">THE</text>
+  <text x="43" y="184" fill="#171717" font-family="Arial Black, Helvetica, sans-serif" font-size="92" font-weight="900" letter-spacing="-8">DOORS</text>
+  <text x="480" y="90" fill="#f3f3f3" font-family="monospace" font-size="20" font-weight="700" transform="rotate(90 480 90)">OPEN / CLOSE / OPEN</text>
+
+  <path d="M102 690V243H477V690Z" fill="#171717"/>
+  <path d="M141 690V282H411V690Z" fill="#f3f3f3"/>
+  <path d="M182 690V324H346V690Z" fill="#d64d36"/>
+  <path d="M214 690V359H303V690Z" fill="#171717"/>
+  <path d="M303 359L346 324V690H303Z" fill="#303030"/>
+  <circle cx="286" cy="520" r="9" fill="#f3f3f3"/>
+
+  <g fill="#f3f3f3">
+    <rect x="67" y="220" width="16" height="380"/>
+    <rect x="497" y="237" width="34" height="12"/>
+    <rect x="497" y="263" width="34" height="12"/>
+    <rect x="497" y="289" width="34" height="12"/>
+    <rect x="497" y="315" width="34" height="12"/>
+  </g>
+  <g fill="#171717">
+    <rect x="48" y="622" width="82" height="12"/>
+    <rect x="48" y="648" width="55" height="12"/>
+    <rect x="48" y="674" width="101" height="12"/>
+  </g>
+  <text x="427" y="704" fill="#f3f3f3" font-family="monospace" font-size="24" font-weight="700">L.A. 1967</text>
+
+  <rect width="600" height="760" opacity=".12" filter="url(#paper)"/>
+</svg>

@@ -46,15 +46,36 @@ main {
   text-transform: lowercase;
 }
 
-.post figure {
+.art-options {
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0 auto;
-  max-width: 37.5rem;
+  max-width: 90rem;
+}
+
+.art-options figure {
+  margin: 0;
 }
 
 .post img {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.art-options figcaption {
+  font-family: monospace;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 64rem) {
+  .art-options {
+    grid-template-columns: 1fr;
+    max-width: 37.5rem;
+  }
 }
 
 @media (max-width: 40rem) {

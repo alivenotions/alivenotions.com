@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Psychedelic doorway</title>
+  <desc id="desc">A dark doorway surrounded by fluid, hypnotic black and green contours.</desc>
+  <rect width="600" height="760" fill="#f3f3f3"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 716C136 631 66 548 136 471C199 401 166 328 226 268C278 217 249 151 300 35"
+      stroke="#171717" stroke-width="38"/>
+    <path d="M585 716C464 631 534 548 464 471C401 401 434 328 374 268C322 217 351 151 300 35"
+      stroke="#171717" stroke-width="38"/>
+    <path d="M20 699C120 628 61 546 126 459C178 390 148 318 215 254C257 214 236 145 300 35"
+      stroke="#005c56" stroke-width="13"/>
+    <path d="M580 699C480 628 539 546 474 459C422 390 452 318 385 254C343 214 364 145 300 35"
+      stroke="#005c56" stroke-width="13"/>
+    <path d="M43 734C174 646 91 564 157 492C226 417 193 340 243 282C289 228 267 159 300 36"
+      stroke="#f3f3f3" stroke-width="6"/>
+    <path d="M557 734C426 646 509 564 443 492C374 417 407 340 357 282C311 228 333 159 300 36"
+      stroke="#f3f3f3" stroke-width="6"/>
+    <path d="M85 742C193 650 129 584 186 506C237 437 220 372 260 311C293 261 279 184 300 59"
+      stroke="#171717" stroke-width="7"/>
+    <path d="M515 742C407 650 471 584 414 506C363 437 380 372 340 311C307 261 321 184 300 59"
+      stroke="#171717" stroke-width="7"/>
+    <path d="M6 593C92 563 82 506 121 466M594 593C508 563 518 506 479 466"
+      stroke="#005c56" stroke-width="8"/>
+    <path d="M25 375C95 365 105 303 172 282M575 375C505 365 495 303 428 282"
+      stroke="#171717" stroke-width="9"/>
+    <path d="M59 197C125 220 151 164 222 170M541 197C475 220 449 164 378 170"
+      stroke="#005c56" stroke-width="8"/>
+  </g>
+  <g fill="#171717">
+    <circle cx="75" cy="509" r="15"/><circle cx="526" cy="508" r="15"/>
+    <circle cx="130" cy="349" r="10"/><circle cx="470" cy="349" r="10"/>
+    <circle cx="192" cy="201" r="7"/><circle cx="408" cy="201" r="7"/>
+  </g>
+  <g fill="#005c56">
+    <circle cx="95" cy="430" r="9"/><circle cx="505" cy="430" r="9"/>
+    <circle cx="165" cy="270" r="6"/><circle cx="435" cy="270" r="6"/>
+  </g>
+  <path d="M193 720V248L300 178L407 248V720Z" fill="#171717"/>
+  <path d="M221 704V267L300 215L379 267V704Z" fill="#005c56"/>
+  <path d="M241 704V282L300 243L359 282V704Z" fill="#101010"/>
+  <path d="M300 244V704H242V283Z" fill="#1d1d1d"/>
+  <path d="M313 465C313 472 307 478 300 478C293 478 287 472 287 465C287 458 293 452 300 452C307 452 313 458 313 465Z" fill="#f3f3f3"/>
+  <path d="M278 704L300 590L322 704Z" fill="#005c56"/>
+</svg>
