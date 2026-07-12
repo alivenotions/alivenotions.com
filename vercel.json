@@ -4,12 +4,5 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": "public",
-  "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/ett",
-      "destination": "/visual",
-      "permanent": true
-    }
-  ]
+  "cleanUrls": true
 }
