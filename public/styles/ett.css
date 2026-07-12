@@ -1,6 +1,5 @@
 html,
-body,
-#root {
+body {
   height: 100%;
   width: 100%;
 }
@@ -55,6 +54,7 @@ body {
   padding: 20px 35px;
   text-align: center;
   color: #ffffffaa;
+  background-size: cover;
 }
 p {
   font-family: sans-serif;
